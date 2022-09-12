@@ -1,0 +1,11 @@
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\bin\Debug\Ejemplo01_12Septiembre.exe.config
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\bin\Debug\Ejemplo01_12Septiembre.exe
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\bin\Debug\Ejemplo01_12Septiembre.pdb
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\bin\Debug\Ejemplo01_12Septiembre.xml
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\obj\Debug\Ejemplo01_12Septiembre.vbprojAssemblyReference.cache
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\obj\Debug\Ejemplo01_12Septiembre.Resources.resources
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\obj\Debug\Ejemplo01_12Septiembre.vbproj.GenerateResource.cache
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\obj\Debug\Ejemplo01_12Septiembre.vbproj.CoreCompileInputs.cache
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\obj\Debug\Ejemplo01_12Septiembre.exe
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\obj\Debug\Ejemplo01_12Septiembre.xml
+C:\Users\jramo\Documents\GitHub\AO22_23\Tema 1\Ejemplo01_12Septiembre\Ejemplo01_12Septiembre\obj\Debug\Ejemplo01_12Septiembre.pdb
