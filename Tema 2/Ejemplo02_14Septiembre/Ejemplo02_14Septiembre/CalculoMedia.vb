@@ -1,4 +1,5 @@
-﻿Module CalculoMedia
+﻿
+Module CalculoMedia
     Sub Main()
         'Calcular la media de 3 números
         Dim n1, n2, n3 As Integer
