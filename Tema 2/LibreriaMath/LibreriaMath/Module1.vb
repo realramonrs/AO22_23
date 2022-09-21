@@ -25,6 +25,7 @@ Module Module1
         'Ajustar a un número de decimales:
         Dim valorCon2Decimales As Double = Math.Round(valor, 2)
         Console.WriteLine(valor & " redondeo con 2 decimales: " & valorCon2Decimales)
+
         Console.ReadLine()
     End Sub
 
