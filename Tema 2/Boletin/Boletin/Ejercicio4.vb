@@ -2,11 +2,14 @@
 
     Sub Main()
         Dim radio, longitud, area, volumen As Single
-        Const PI As Single = 3.1416
+        Const PI As Double = 3.1416
+
 
         'Entrada : radio
         Console.WriteLine("Introduzca el radio")
         radio = Convert.ToSingle(Console.ReadLine())
+
+
 
         'Cálculos
         longitud = Convert.ToSingle(2 * PI * radio)
