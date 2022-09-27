@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{504A2811-4945-4A11-9E1E-07443645DFDB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Boletin.Ejercicio12</StartupObject>
+    <StartupObject>Boletin.Ejercicio14</StartupObject>
     <RootNamespace>Boletin</RootNamespace>
     <AssemblyName>Boletin</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -75,6 +75,9 @@
   <ItemGroup>
     <Compile Include="Ejercicio10.vb" />
     <Compile Include="Ejercicio12.vb" />
+    <Compile Include="Ejercicio13.vb" />
+    <Compile Include="Ejercicio14.vb" />
+    <Compile Include="Ejercicio16.vb" />
     <Compile Include="Ejercicio4.vb" />
     <Compile Include="Ejercicio7.vb" />
     <Compile Include="Ejercicio9.vb" />
