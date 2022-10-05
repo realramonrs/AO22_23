@@ -1,4 +1,4 @@
-﻿Module Module1
+﻿Module RiosRamonEjemplo1
 
     Sub Main()
         'Programa que lee la altura y la edad de un niño,
@@ -14,12 +14,23 @@
         condicion = edad < 8 Or altura < 1.35
 
         If condicion Then
+        Else
+
 
         End If
         If edad < 8 Or altura < 1.35 Then
             Console.WriteLine("Debe de llevar silla de protección.")
         Else
             Console.WriteLine("No debe de llevar silla de protección.")
+        End If
+
+        'Si un número es múltiplo de 7
+        Dim numero As Integer = 45
+
+        If numero Mod 7 = 0 Then
+            Console.WriteLine("Múltiplo de 7")
+        Else
+            Console.WriteLine("No múltiplo de 7")
         End If
         Console.ReadLine()
     End Sub
