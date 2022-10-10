@@ -11,7 +11,6 @@ Module Module1
             ejercicio = Convert.ToInt32(Console.ReadLine())
             If ejercicio <> 1 Then
 
-
                 If ejercicio = 4 Then
                     'Resolver el ejercicio 4: Cálculo del menor de 4 variables
                     Dim a, b, c, d, menor As Integer
@@ -75,13 +74,66 @@ Module Module1
                     End If
 
                 ElseIf ejercicio = 7 Then
-                Else
+                    Dim num1, num2, suma, raiz As Double
 
+                    Try
+                        Console.WriteLine("Intro numero 1: ")
+                        num1 = Convert.ToDouble(Console.ReadLine())
+
+                        Console.WriteLine("Intro numero 2: ")
+                        num2 = Convert.ToDouble(Console.ReadLine())
+
+                        suma = num1 + num2
+
+                        If suma > 0 Then
+                            raiz = Math.Sqrt(suma)
+                            Console.WriteLine("La raíz: " & raiz)
+                        Else
+                            Console.WriteLine("No se puede calcular la raíz.")
+                        End If
+
+                    Catch ex As Exception
+                        Console.WriteLine("Error en los datos introducidos.")
+                    End Try
+
+                ElseIf ejercicio = 8 Then
+                    Console.WriteLine("Tienes que hacerlo tú!")
+
+                ElseIf ejercicio = 9 Then
+                ElseIf ejercicio = 10 Then
+                    Dim presion, temperatura As Double
+                    Console.WriteLine("Intr presion:")
+                    presion = Convert.ToDouble(Console.ReadLine())
+                    Console.WriteLine("Intro temperatura: ")
+                    temperatura = Convert.ToDouble(Console.ReadLine())
+
+                    If presion > 2 Then
+                        Console.WriteLine("Abrir válvula de seguridad")
+                    End If
+
+                    If temperatura > 500 Then
+                        Console.WriteLine("Reducir temperatura del núcleo")
+
+                    End If
+
+                    If presion < 2 And temperatura < 500 Then
+                        Console.WriteLine("Todo en orden.")
+                    End If
+
+                ElseIf ejercicio = 11 Then
+                    Dim numero As Integer = 12
+
+                        If numero Mod 2 = 0 Or numero Mod 3 = 0 Then
+                            Console.WriteLine("Número múltiplo de 2 o de 3")
+                        End If
+                    End If
                 End If
-            End If
 
         Loop While ejercicio <> 1
 
+        If ejercicio = 1 Then
+            Console.WriteLine("Gracias por jugar. Pulsa Enter para cerrar definitivamente.")
+        End If
         Console.ReadLine()
     End Sub
 
