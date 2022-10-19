@@ -85,6 +85,56 @@ Module Module1
                     Console.Clear()
                 Loop While continuar = "s"c Or continuar = "S"c
 
+            Case 9
+                Dim litros, pago As Double
+                Console.WriteLine("Introduzca los litros: ")
+                litros = Convert.ToDouble(Console.ReadLine())
+
+                If litros < 50 Then
+                    pago = 0
+
+                ElseIf litros < 200 Then
+
+                    pago = (litros - 50) * 10
+                Else
+                    pago = (litros - 200) * 20 + 1500
+                End If
+
+                If pago < 150 Then
+                    pago = 150
+                End If
+                Console.WriteLine("Debe pagar : " & pago)
+
+            Case 11
+                Dim horas, hExtra, tasa, salarioBruto, salarioNeto As Double
+                Console.WriteLine("Introduce las horas trabajadas: ")
+                horas = Convert.ToInt32(Console.ReadLine())
+                Console.WriteLine("Introduce la tasa: ")
+                tasa = Convert.ToDouble(Console.ReadLine())
+
+                If horas > 38 Then
+                    hExtra = horas - 38
+                    salarioBruto = hExtra * 1.5 * tasa + 38 * tasa
+                Else
+                    salarioBruto = tasa * horas
+                End If
+
+
+                If salarioBruto < 300 Then
+                    salarioNeto = salarioBruto
+                Else
+                    salarioNeto = salarioBruto - 0.1 * salarioBruto
+                End If
+
+                Console.WriteLine("Salario Bruto: " & salarioBruto)
+                Console.WriteLine("Salario neto: " & salarioNeto)
+
+
+
+
+
+
+
 
 
         End Select
