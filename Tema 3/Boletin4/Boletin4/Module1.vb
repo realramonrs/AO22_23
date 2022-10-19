@@ -120,6 +120,7 @@ Module Module1
                 End If
 
 
+
                 If salarioBruto < 300 Then
                     salarioNeto = salarioBruto
                 Else
@@ -129,7 +130,13 @@ Module Module1
                 Console.WriteLine("Salario Bruto: " & salarioBruto)
                 Console.WriteLine("Salario neto: " & salarioNeto)
 
+            Case 12
+                Dim aleatorio As New Random
+                For i As Integer = 1 To 500 Step 1
 
+                    Dim n As Integer = aleatorio.Next(1, 100)
+                    Console.Write(n & " ")
+                Next
 
 
 
