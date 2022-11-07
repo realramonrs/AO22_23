@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Boletin5</RootNamespace>
     <TargetFramework>net6.0</TargetFramework>
-    <StartupObject>Boletin5.Ejercicio8</StartupObject>
+    <StartupObject>Boletin5.Ejercicio11</StartupObject>
   </PropertyGroup>
 
 </Project>
