@@ -10,6 +10,7 @@
 
         'Librería Array
         'Copiar un array en otro
+
         Array.Copy(original, copia, 4)
 
         Array.Copy(original, 4, copia, 0, 4)
@@ -30,7 +31,11 @@
         Console.WriteLine("Posición: " & posicion)
 
         'Comprobar si dos arrays son iguales
-        Dim iguales As Boolean = Array.Equals(original, copia)
+        Dim a1() As Integer = {1, 2, 3}
+        Dim a2() As Integer = {1, 26, 3}
+        a1 = a2
+        Dim iguales As Boolean = a1.Equals(a2)
+        Console.WriteLine("Iguales ? " & iguales)
         Console.ReadLine()
 
     End Sub
