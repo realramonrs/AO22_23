@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EEB37DC2-CC9D-4A32-8E3C-D074248F6A36}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>RepasoBucles7Diciembre.Module1</StartupObject>
+    <StartupObject>RepasoBucles7Diciembre.Module2</StartupObject>
     <RootNamespace>RepasoBucles7Diciembre</RootNamespace>
     <AssemblyName>RepasoBucles7Diciembre</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Module1.vb" />
+    <Compile Include="Module2.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
