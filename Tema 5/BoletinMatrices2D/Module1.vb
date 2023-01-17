@@ -132,6 +132,84 @@
                     Else
                         Console.WriteLine("simétrica.")
                     End If
+                Case 6
+                    Dim matriz6(4, 9) As Integer
+                    Console.WriteLine("Matriz generada : ")
+
+                    For i As Integer = 0 To matriz6.GetUpperBound(0) Step 1
+                        For j As Integer = 0 To matriz6.GetUpperBound(1) Step 1
+                            Console.Write(matriz6(i, j) & " ")
+                        Next
+                        Console.WriteLine()
+
+                    Next
+
+                    'Suma primera fila
+                    Dim sumaFila0 As Integer
+                    For u As Integer = 0 To matriz6.GetUpperBound(1) Step 1
+                        sumaFila0 = sumaFila0 + matriz6(0, u)
+                    Next
+                    Console.WriteLine("La suma de la primera fila es : " & sumaFila0)
+                    Dim sumaUltimaColumna As Integer
+
+                    For fila As Integer = 0 To matriz6.GetUpperBound(0) Step 1
+                        sumaUltimaColumna = sumaUltimaColumna + matriz6(fila, matriz6.GetUpperBound(1))
+                    Next
+
+                    Console.WriteLine("La suma de la última col es: " & sumaUltimaColumna)
+                Case 8
+                    Dim matriz8(4, 4) As Integer
+                    generarMatriz2D(matriz8, 1, 20)
+                    Console.WriteLine("Matriz generada: ")
+                    mostrarMatriz(matriz8)
+                    Dim suma As Integer
+                    Dim media, desviacionMinimo, desviacionMaximo As Double
+                    Dim filaMinimo, filaMaximo, columnaMinimo, columnaMaximo As Integer
+                    Dim minimo, maximo As Integer
+
+                    For i As Integer = 0 To matriz8.GetUpperBound(0) Step 1
+                        For j As Integer = 0 To matriz8.GetUpperBound(1) Step 1
+                            suma = suma + matriz8(i, j)
+                        Next j
+                    Next i
+
+                    media = suma / matriz8.Length
+
+                    minimo = matriz8(0, 0)
+                    maximo = matriz8(0, 0)
+
+                    For i As Integer = 0 To matriz8.GetUpperBound(0) Step 1
+                        For j As Integer = 0 To matriz8.GetUpperBound(1) Step 1
+                            If i = 0 And j = 0 Then
+                                Continue For
+                            End If
+                            If matriz8(i, j) > maximo Then
+                                maximo = matriz8(i, j)
+                                filaMaximo = i
+                                columnaMaximo = j
+                            End If
+                        Next j
+                    Next i
+
+                    For i As Integer = 0 To matriz8.GetUpperBound(0) Step 1
+                        For j As Integer = 0 To matriz8.GetUpperBound(1) Step 1
+                            If matriz8(i, j) < minimo Then
+                                minimo = matriz8(i, j)
+                                filaMinimo = i
+                                columnaMinimo = j
+                            End If
+                        Next j
+                    Next i
+
+                    desviacionMaximo = Math.Abs(maximo - media)
+                    desviacionMinimo = Math.Abs(minimo - media)
+
+                    Console.WriteLine("El mínimo está en la posición : " & filaMinimo & "," & columnaMinimo)
+                    Console.WriteLine("El máximo está en la posición : " & filaMaximo & "," & columnaMaximo)
+
+                Case 9
+                    Dim matriz(,) As Integer = {{0, 1, 0}, {0, 0, 0}, {1, 1, 1}}
+
 
 
                     Console.ReadLine()
