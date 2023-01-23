@@ -76,10 +76,27 @@ Module Module1
 
 
         Dim matriculas() As String = {"1234-YTR", "9092-RTY", "3829-GHT"}
+        Dim arrayCaracteres() As Char = frase.ToCharArray()
 
+        'Reemplazamos los espacios por *
+        For i As Integer = 0 To arrayCaracteres.Length - 1 Step 1
+            If arrayCaracteres(i) = " "c Then
+                arrayCaracteres(i) = "*"c
 
+            End If
+        Next
+        Console.WriteLine()
+        For i As Integer = 0 To arrayCaracteres.Length - 1 Step 1
+            Console.Write(arrayCaracteres(i) + " ,")
+        Next
 
+        frase = ""
+        For i As Integer = 0 To arrayCaracteres.Length - 1 Step 1
+            frase += arrayCaracteres(i)
+        Next
 
+        Console.WriteLine()
+        Console.WriteLine("frase = " & frase)
 
 
 
