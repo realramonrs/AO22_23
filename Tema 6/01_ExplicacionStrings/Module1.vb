@@ -76,6 +76,10 @@ Module Module1
 
 
         Dim matriculas() As String = {"1234-YTR", "9092-RTY", "3829-GHT"}
+
+        frase = "Recuerda que me gusta programar"
+        frase = frase.Replace(" "c, "*"c)
+
         Dim arrayCaracteres() As Char = frase.ToCharArray()
 
         'Reemplazamos los espacios por *

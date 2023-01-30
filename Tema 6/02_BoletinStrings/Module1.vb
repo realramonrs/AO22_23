@@ -1,4 +1,5 @@
-﻿Module Module1
+﻿Imports System.IO
+Module Module1
 
     Sub Main()
         Dim matriculas(19) As String
@@ -68,6 +69,30 @@
                 Console.WriteLine(parteLetras)
             End If
         Next
+
+        'Apartado E: Volcar datos matrículas a un Fichero
+        Dim escritor As New StreamWriter(Directory.GetCurrentDirectory() + "\matriculas.txt", False)
+
+        For Each matricula As String In matriculas
+            If matricula Is Nothing Then
+                Exit For
+            End If
+            escritor.WriteLine(matricula)
+        Next
+
+        escritor.WriteLine("Adios")
+        'Cerramos el escritor
+        escritor.Close()
+
+
+
+        'Ejercicio 2
+        Dim frase As String
+        Console.WriteLine("introduzca una frase")
+        frase = Console.ReadLine()
+        Dim caracter As Char
+        Console.WriteLine("Que caracter quieres buscar: ?")
+        caracter = Convert.ToChar(Console.ReadLine())
 
 
         Console.ReadLine()
