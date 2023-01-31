@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{44726D47-AF82-4D96-9FBA-910C9730AD16}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>BoletinMatrices2D.Module1</StartupObject>
+    <StartupObject>BoletinMatrices2D.BarcaBaladoAnxo</StartupObject>
     <RootNamespace>BoletinMatrices2D</RootNamespace>
     <AssemblyName>BoletinMatrices2D</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,6 +69,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AhnMenesesHugoMoises.vb" />
+    <Compile Include="BarcaBaladoAnxo.vb" />
+    <Compile Include="BenavidesHermidaAnxo.vb" />
+    <Compile Include="BlancoPiñeiroSergio.vb" />
+    <Compile Include="CasalRomeroPablo.vb" />
+    <Compile Include="FernándezSolinoJoel %281%29.vb" />
+    <Compile Include="FragaQuirogaGuillermo %282%29.vb" />
     <Compile Include="Funciones.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
