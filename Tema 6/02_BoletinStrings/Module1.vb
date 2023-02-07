@@ -187,7 +187,7 @@ Module Module1
         End If
 
         Console.WriteLine(" ********************* EJERCICIO 4 ********************")
-        'Ejercicio 4: Mostrar palabras que tienen b
+        'Ejercicio 4: Mostrar palabras que empiezan por b
         Dim fraseej4 As String = "Voy bien en programacion, busco soluciones a los problemas"
         Dim palabras() As String = fraseej4.Split(" "c)
         Console.WriteLine("Palabras que empiezan por b: ")
@@ -196,6 +196,57 @@ Module Module1
                 Console.WriteLine(palabra)
             End If
         Next
+
+        'Ejercicio 6: Número de palabras que contienen el string aba 
+        Console.WriteLine("****************** EJERCICIO 6 *************************")
+        Dim fraseEj5 As String = "Cantaba mientras caminaba por el parque"
+        Dim palabras2() As String = fraseEj5.Split(" "c)
+        Dim contador As Integer = 0
+        For Each p As String In palabras2
+            If p.Contains("aba") Then
+                contador += 1
+            End If
+        Next
+        Console.WriteLine(contador & " palabras que contienen aba")
+        'Ejercicio 7: Obtener el dominio de una dirección de correo
+        Console.WriteLine("******************* EJERCICIO 7 ***************")
+        Dim email As String
+        Console.WriteLine("Introduzca una dirección de correo: ")
+        email = Console.ReadLine()
+
+        'Estrategia 1 : substring
+        Dim posArroba As Integer = email.IndexOf("@")
+        Dim ultimaPosicionPunto As Integer = email.LastIndexOf(".")
+        Dim dominio As String = email.Substring(posArroba + 1, ultimaPosicionPunto - posArroba - 1)
+        Console.WriteLine("El dominio es: " & dominio)
+
+        'Estrategia 2 : split
+        Dim dominio2 As String = email.Split("@"c, "."c)(1)
+        Console.WriteLine("El dominio es: " & dominio)
+
+        '********************* EJERCICIO 9 ******************
+        Dim cadena As String = "Me gusta mucho Montecastelo"
+
+        'Estrategia 1: replace
+        cadena = cadena.Replace(" "c, "*"c)
+
+        'Estrategia 2: usando array de chars
+        Dim caracteres() As Char = cadena.ToCharArray()
+
+        For i As Integer = 0 To caracteres.Length - 1 Step 1
+            If caracteres(i) = " "c Then
+                caracteres(i) = "*"c
+            End If
+        Next
+        cadena = ""
+        For i As Integer = 0 To caracteres.Length - 1 Step 1
+            cadena += caracteres(i)
+        Next
+        Console.WriteLine(cadena)
+
+        Dim cadenaDinamica As System.Text.StringBuilder = New System.Text.StringBuilder()
+
+        cadenaDinamica.Append("hola")
 
         Console.ReadLine()
     End Sub
