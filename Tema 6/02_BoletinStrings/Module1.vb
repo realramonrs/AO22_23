@@ -244,9 +244,31 @@ Module Module1
         Next
         Console.WriteLine(cadena)
 
-        Dim cadenaDinamica As System.Text.StringBuilder = New System.Text.StringBuilder()
+        ' ************* EJERCICIO 10 ********************
 
-        cadenaDinamica.Append("hola")
+        Dim cadena1 As String = "Pedro PicaPiedra*17Julio1999?2309"
+        'Estrategia 1: substring(indexOf(?)+1)
+        Dim posicionInterr As Integer = cadena1.IndexOf("?"c)
+        Dim salario1 As Integer = Convert.ToInt32(cadena1.Substring(posicionInterr + 1))
+
+        If salario1 > 1000 Then
+            Console.WriteLine("Gana más de 1000 pavos")
+        End If
+        'Estrategia 2
+        Dim salario2 As Integer = Convert.ToInt32(cadena1.Split("?"c)(1))
+
+        Dim cadena2 As String = "J*2500!6Febrero2010"
+        'Estrategia 1 : substring(posicionAsterisco +1,posExclam - posAsterisco - 1)
+        Dim posAsterisco As Integer = cadena2.IndexOf("*"c)
+        Dim posExclamacion As Integer = cadena2.IndexOf("!"c)
+
+
+        Dim salario3 As Integer = Convert.ToInt32(cadena2.Substring(posAsterisco + 1, posExclamacion - posAsterisco - 1))
+
+        If salario3 > 1000 Then
+            Console.WriteLine("Gana más de 1000 pavos.")
+        End If
+
 
         Console.ReadLine()
     End Sub
