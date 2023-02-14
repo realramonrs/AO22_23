@@ -59,9 +59,39 @@ Module Module1
         '********************** EJERCICIO 15 ****************
         Console.WriteLine()
         Console.WriteLine(" ********************** EJERCICIO 15 ***************")
-        Dim cadena15 As String = "Cadena con espacios"
+        Dim cadena15 As String = "adena con espacios"
+        Dim palabras() As String = cadena15.Split(" "c)
+        Console.WriteLine()
+        Console.WriteLine("Frase: " & cadena15)
+        Console.WriteLine("Palabras que tienen al menos una letra mayúscula:")
+        Dim encontrado As Boolean = False
+        For i As Integer = 0 To palabras.Length - 1 Step 1
+            For j As Integer = 0 To palabras(i).Length - 1 Step 1
+                If Char.IsUpper(palabras(i)(j)) Then
+                    Console.WriteLine(palabras(i))
+                    encontrado = True
+                End If
+            Next
+        Next
+        If Not encontrado Then
+            Console.WriteLine("No hay palabras con mayúsculas")
+        End If
 
+        Console.WriteLine()
+        Console.WriteLine(" ********************** EJERCICIO 16 ***************")
+        Console.WriteLine()
+        Dim cadena16 As String = "adena con espacios"
+        Dim palabras2() As String = cadena15.Split(" "c)
+        Dim palabraMayor As String = palabras2(0)
 
+        For Each cadena As String In palabras2
+            If cadena.Length > palabraMayor.Length Then
+                palabraMayor = cadena
+            End If
+        Next
+        Console.ForegroundColor = ConsoleColor.Yellow
+        Console.WriteLine("La palabra con más caracteres es: " & palabraMayor)
+        Console.ResetColor()
         '****************** EJERCICIO REPASO FICHEROS *************************
         Console.WriteLine()
         Console.WriteLine("***************** EJERCICIO REPASO FICHEROS ***************")
@@ -71,9 +101,11 @@ Module Module1
             Dim lector As StreamReader = New StreamReader(ruta)
             Dim posicion As Integer = 0
 
+            Dim regstros() As String = File.ReadAllLines(ruta)
             While Not lector.EndOfStream
-                '   series(posicion) = lector.ReadLine()
+                '  series(posicion) = lector.ReadLine()
                 Dim registro As String = lector.ReadLine()
+
                 If registro.Split("*"c)(2) = "Netflix" Then
                     Console.WriteLine(registro)
 
