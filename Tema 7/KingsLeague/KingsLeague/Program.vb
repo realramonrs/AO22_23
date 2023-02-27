@@ -1,3 +1,4 @@
+Option Strict On
 Imports System
 
 Module Program
@@ -47,7 +48,7 @@ Module Program
 
         'Quiero obtener el jugador en la ultima posicion
         Dim ultimoJugador As String
-        ultimoJugador = jugadores.Item(jugadores.Count - 1)
+        ultimoJugador = Convert.ToString(jugadores.Item(jugadores.Count - 1))
         Console.WriteLine("El ultimo jugador de la lista es: " & ultimoJugador)
 
         'Quiero obtener el array de jugadores ordenado
