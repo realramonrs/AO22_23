@@ -10,7 +10,6 @@ Module Ejercicio5
         Dim promedio As Double
 
         'Llenamos la lista con edades
-
         For index = 1 To lista.Capacity
             lista.Add(rnd.Next(16, 31))
         Next
