@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C356E4D9-3F62-4772-AC43-7C09F604592C}</ProjectGuid>
+    <ProjectGuid>{4F57C50E-0CC7-4076-986F-0DCDC7399FEC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>_01EjemploCompleto.My.MyApplication</StartupObject>
-    <RootNamespace>_01EjemploCompleto</RootNamespace>
-    <AssemblyName>01EjemploCompleto</AssemblyName>
+    <StartupObject>_01Ejemplo1AppGrafica.My.MyApplication</StartupObject>
+    <RootNamespace>_01Ejemplo1AppGrafica</RootNamespace>
+    <AssemblyName>01Ejemplo1AppGrafica</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,10 +22,8 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>01EjemploCompleto.xml</DocumentationFile>
-    <NoWarn>
-    </NoWarn>
-    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <DocumentationFile>01Ejemplo1AppGrafica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,10 +32,8 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>01EjemploCompleto.xml</DocumentationFile>
-    <NoWarn>
-    </NoWarn>
-    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <DocumentationFile>01Ejemplo1AppGrafica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -46,7 +42,7 @@
     <OptionCompare>Binary</OptionCompare>
   </PropertyGroup>
   <PropertyGroup>
-    <OptionStrict>On</OptionStrict>
+    <OptionStrict>Off</OptionStrict>
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
@@ -99,18 +95,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Series.Designer.vb">
-      <DependentUpon>Series.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Series.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TecladoEventos.Designer.vb">
-      <DependentUpon>TecladoEventos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TecladoEventos.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -121,12 +105,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Series.resx">
-      <DependentUpon>Series.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TecladoEventos.resx">
-      <DependentUpon>TecladoEventos.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
