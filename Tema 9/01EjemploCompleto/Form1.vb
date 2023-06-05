@@ -97,4 +97,10 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         TecladoEventos.Show()
     End Sub
+
+    Private Sub txtTitulo_KeyDown(sender As Object, e As KeyEventArgs) Handles txtTitulo.KeyDown
+        If e.KeyCode = Keys.Enter Then
+
+        End If
+    End Sub
 End Class
